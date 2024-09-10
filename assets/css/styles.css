@@ -1,0 +1,813 @@
+/* Body */
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+}
+h3 {
+  visibility: hidden;
+}
+
+/* Navar */
+.navbar {
+  background-color: rgb(244, 246, 239); 
+}
+.navbar-nav {
+  margin-right: 10rem; 
+}
+.navbar-brand img {
+  width: 50%; 
+  height: 50%;
+}
+.navbar-nav .nav-link {
+  margin-left: 10%; /* Espacio entre el logo y los enlaces */
+  margin-left: 20px; /* Espacio entre los elementos del menú */
+}
+.navbar-nav .nav-item .nav-link {
+  color: rgb(75, 105, 84); 
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+.contact-button_nav {
+  background-color: rgb(123, 45, 116); 
+  color: white; 
+  border: none; 
+  border-radius: 20px; 
+  padding: 10px 20px;
+}
+.contact-button_nav:hover {
+  background-color: rgb(75, 105, 84); 
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: rgb(123, 45, 116); 
+}
+.navbar-nav .nav-item.active .nav-link {
+  color: rgb(123, 45, 116); 
+}
+.navbar-nav .nav-item:nth-child(1) .nav-link {
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta cualquier texto que sobrepase el espacio disponible */
+  text-overflow: ellipsis; /* Añade puntos suspensivos al final si el texto es demasiado largo */
+}
+.navbar-nav .nav-item {
+  white-space: nowrap; /* Evita que los elementos se dividan en varias líneas */
+  display: flex; 
+  align-items: center; 
+}
+
+/* Hero Section */
+.hero {
+  position: relative; 
+  display: flex;
+  align-items: center;
+  padding-top: 6.5rem;
+}
+.circleHero {
+  width: 30vw; 
+  height: 30vw;
+  border-radius: 50%; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  background-color: white; 
+  padding: 10px;
+  margin-right: -10vw; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative; 
+
+}
+
+
+
+.circleHero img {
+  width: 100%; 
+  margin-bottom: 10px; 
+}
+.slogan {
+  font-family: 'Poppins', sans-serif;  
+  font-size: 1.5vw; 
+  color: rgb(121, 161, 130);
+  font-weight: 700; 
+  text-align: center;
+  margin-top: 10px; /* Adjust as necessary */
+}
+.vectors {
+  width: 30vw; /* El vector ocupará el 30% del ancho del viewport */
+  max-width: auto; /* Establece un tamaño máximo si es necesario */
+  height: auto; /* Mantén la proporción del vector */
+  position: absolute; /* Posiciona el vector de manera absoluta */
+  left: 20vw; /* Coloca el vector al costado derecho del círculo */
+  top: 50%; /* Centra verticalmente el vector */
+  transform: translateX(40%) translateY(-30%); /* Ajusta la posición vertical del vector */
+}
+.text-block h1 {
+  margin-bottom: 20px; /* Adjust spacing between the heading and the button */
+}
+.text-block {
+  height: 100%; /* Ensures the div takes up the full height of its container */
+  color: rgb(244, 246, 239);
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10vw;
+  margin-left: 15vw;
+  width: 40%; 
+  text-align: right; 
+}
+
+
+
+.text-block .button {
+  margin-top: 20px; /* Adjusts the spacing between the button and other elements */
+  
+}
+
+ .hero .button {
+  padding: 15px 30px;
+  background-color: rgb(244, 246, 239);
+  color: rgb(123, 45, 116);
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+} 
+.hero .button:hover {
+  background-color: rgb(75, 105, 84);
+  color: rgb(244, 246, 239);
+} 
+
+/* te agobia*/
+.section-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.textSubTitles {
+  color: rgb(75, 105, 84);
+  font-size: 36px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold; 
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.textSubTitlesSmall {
+  color: rgb(75, 105, 84);
+  font-size: 24px; 
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold; 
+  text-align: center;
+  padding: 5px;
+}
+
+/* Sección iconos */
+.icon-container {
+  text-align: center;
+  padding-bottom: 100px;
+}
+.icon {
+  width: 80px; 
+  height: 80px; 
+  
+}
+.icon-text {
+  padding-top: 50px;
+  max-width: 200px; 
+  margin: 0 auto;
+  color: rgb(75, 105, 84); 
+  font-size: 14px; 
+}
+/* Que ofrecemos */
+.card {
+  margin: 0 !important;
+  background-color: rgb(123, 45, 116);
+  color: #fff;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 250px !important; 
+  height: 320px !important; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+}
+.card-body {
+  margin-top: 60px !important; 
+}
+#que-ofrecemos h2.text-center {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: bold !important;
+  font-size: 36px !important;
+  color: rgb(75, 105, 84) !important;
+  margin-bottom: 60px !important;
+}
+.card-text {
+  font-size: 14px !important; 
+  margin-top: auto !important; 
+}
+.card:hover {
+  background-color: rgb(171, 188, 7) !important; 
+  transform: translateY(-5px) !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+/* Metodología de Trabajo */
+.metodologia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(244, 246, 239);
+  color: rgb(75, 105, 84);
+}
+.metodologia h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold; 
+  text-align: center;
+  font-size: 36px;
+  color: rgb(75, 105, 84);
+}
+.metodologia-imagen {
+  text-align: center; 
+}
+.metodologia-imagen img {
+  display: inline-block; 
+  vertical-align: middle; 
+  width: 80%;
+  height: auto;
+  margin: 40px 0;
+}
+.metodologia p {
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  text-align: justify;
+}
+.text-Metodoligia-ol {
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  margin-bottom: 10px;
+}
+.text-Metodoligia-h{
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold; 
+}
+
+.roles-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 40px;
+}
+
+/*algunos proyectos*/
+.project-section {
+  text-align: center;
+  padding: 50px 0;
+}
+.project-title {
+  margin-bottom: 60px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: bold; 
+  text-align: center;
+  color: rgb(75, 105, 84);
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.project-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-overlay {
+  font-family: 'Popins', sans-serif;
+  font-weight: bold; 
+  font-size: 24px;
+  background: rgba(104, 103, 103, 0.5);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+.project-description {
+  font-family: 'Nunito', sans-serif;
+  color: rgb(75, 105, 84);
+  max-width: 200px;
+}
+
+/* Nuestras certificaciones*/
+.textTitles{
+  color: rgb(75, 105, 84);
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold; 
+  font-size: 36px;
+  padding-bottom: 100px;
+} 
+.textTitlesSmall {
+  color: rgb(75, 105, 84);
+  font-size: 20px; 
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold; 
+  padding: 20px;
+}  
+
+/*banner*/
+.banner{
+  background-color: rgb(121, 161, 130);
+  color: rgb(255, 255, 255);
+  font-weight: bold; /* Texto en negrita */
+  font-family: 'Poppins', sans-serif;
+  padding: 60px;
+  margin-top:-50px;
+}
+#banner h2 {
+  display: inline-block; 
+  margin: 0 auto; 
+}
+
+/*carrusel testimonios*/
+#testimonios .carousel-item {
+  padding: 20px 0;
+}
+.carousel-caption {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 100%;
+text-align: center;
+}
+.text-width{
+width: 300px;
+}
+#testimonios .carousel-item h5{
+  padding-top: 10px;
+  color: rgb(75, 105, 84);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; /* Semibold */
+  font-size: 14px;
+  margin-top: auto;
+  margin-bottom: 15px;
+}
+#testimonios .carousel-item p {
+  color: rgb(75, 105, 84);
+  padding-top: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  flex-grow: 1;
+}
+#testimonios .carousel-control-prev-icon,
+#testimonios .carousel-control-next-icon {
+ background-color:rgb(0, 0, 0);
+ color:#fff
+}
+#testimonios .carousel-control-prev{
+  margin-left: -8%;
+}
+#testimonios .carousel-control-next{
+  margin-right: -8%;
+}
+#testimonios .img-fluid{
+  width: 150px;
+  height: 150px;
+}
+.custom-color {
+  color: rgb(123, 45, 116);
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+.custom-color:hover {
+  color: rgb(171, 188, 7);
+}
+.custom-color_bottom{
+  margin-bottom: 30px;
+}
+
+/*Testimonio Modal*/
+.cerrar-button {
+  background-color: rgb(123, 45, 116); 
+  color: white; 
+  border: none; 
+  border-radius: 20px; 
+  padding: 10px 20px; 
+}
+.cerrar-button:hover {
+  background-color:rgb(171, 188, 7); 
+  border: none; 
+}
+
+/* Nosotros */
+#nosotros .img-container {
+  padding: 0px;
+  margin: 0px;
+}
+#nosotros img {
+  max-width: 100%; 
+  height: auto; 
+}
+#nosotros h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: bold; 
+  color: rgb(75, 105, 84); 
+  text-align: center; 
+  margin-bottom: 20px;
+}
+#nosotros p {
+  text-align: center; 
+  margin: 20px 0; 
+  white-space: pre-line; 
+}
+#nosotros .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  padding: 0;
+}
+#nosotros .contact-button {
+  background-color:rgb(123, 45, 116); 
+  color: white; 
+  border: none; 
+  border-radius: 20px; 
+  padding: 10px 20px; 
+  font-size: 1rem;
+}
+#nosotros .contact-button:hover {
+  background-color: rgb(171, 188, 7);
+  color: black
+}
+
+/*carrusel nuestro equipo*/
+#equipo .carousel-item {
+  padding: 20px 0;
+}
+#equipo .carousel-item h5{
+  padding-top: 10px;
+  color: rgb(75, 105, 84);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; 
+  font-size: 14px;
+  margin-top: auto;
+  margin-bottom: 15px;
+}
+#equipo .carousel-item p {
+  color: rgb(75, 105, 84);
+  padding-top: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  flex-grow: 1;
+}
+#equipo .carousel-control-prev-icon,
+#equipo .carousel-control-next-icon {
+ background-color:rgb(0, 0, 0);
+}
+#equipo .carousel-control-prev{
+  margin-left: -8%;
+}
+#equipo .carousel-control-next{
+  margin-right: -8%;
+}
+#equipo .img-fluid{
+  width: 150px;
+  height: 150px;
+}
+.custom-color-equipo {
+  color: white;
+  background-color: rgb(123, 45, 116);
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  border-color: rgb(123, 45, 116); 
+  border-radius: 50px;
+}
+.custom-color-equipo:hover {
+  background-color: rgb(171, 188, 7);
+  color: black;
+  border-color:  rgb(171, 188, 7);
+}
+
+/*Formulario contacto*/
+.form-container {
+  background-color: rgb(121, 161, 130);
+  border-radius: 60px;
+  padding: 80px;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.form-h2{
+  color: rgb(75, 105, 84);
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 60px;
+}
+.form-container input,
+.form-container textarea {
+  border-radius: 20px;
+  margin-bottom: 15px;
+  width: 100%;
+  border: none;
+}
+.form-container label {
+  font-weight: bold;
+  font-size: 20px;
+}
+.form-container button {
+  background-color: rgb(123, 45, 116);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 20px;
+  border: none;
+  margin: 20px;
+  padding: 10px 20px;
+}
+.form-container button:hover {
+  background-color: white;
+  color:  rgb(123, 45, 116);
+}
+.contact-info {
+  padding: 0px;
+  margin-left: 0px;
+  text-align: center;
+}
+.contact-info h2 {
+  color: rgb(121, 161, 130);
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  max-width: 70%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+}
+.contact-info img {
+  max-width: 100%;
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.contact-info p {
+  font-size: 16px;
+  color: rgb(121, 161, 130);
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: left; 
+  display: flex; 
+  height: 30px;
+  padding-left: 80px;
+}
+.contact-info .icon {
+  color: rgb(0,0,0);
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* Footer */
+.footer {
+  background-color: rgb(123, 45, 116);
+  margin-top: 3vw;
+  padding-top: 3vw;
+  padding-bottom: 1vw;
+}
+.footer .circleHero {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 10px;
+  margin-right: 0vw; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.footer .circleHero img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.footer img {
+  max-width: 100%;
+  height: auto;
+}
+.footer p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+}
+.footer .social-icon {
+  width: 34px;
+  height: 34px;
+  margin: 0 10px;
+}
+.footer h5 {
+  text-align: right;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+}
+.footer .text-a-footer {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+  text-align: left;
+}
+.footer .social-icons-row{
+  text-align: right
+}  
+
+/*preguntas frecuentes */
+.faq-button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  color:#fff;
+  padding: 10px;
+  background-color:rgb(123, 45, 116); 
+  border:none;
+  border-radius: 20px;
+}
+.faq-button:hover {
+  background-color: rgb(171, 188, 7) !important; 
+  color:#fff;
+  border:none;
+  color: #000;
+}
+
+ /* Media queries para tamaños específicos */
+ @media (max-width: 992px) {
+  .vectors {
+    display: none;
+  }
+ }
+
+/* Media queries para tamaños específicos */
+ @media (max-width: 768px) {
+  .circleHero {
+    width: 50vw;
+    height: 50vw;
+    margin-right: 0vw; /* Ajusta el margen derecho para pantallas más pequeñas */
+    margin-top: 20vw;
+  }
+  .slogan {
+    font-size: 2vw;
+  }
+  .vectors {
+    display: none;
+  }
+  .text-block {
+    display: flex;
+    justify-content: center; /* Centra el bloque horizontalmente */
+    text-align: center; /* Centra el texto dentro del bloque */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    width: 45%; /* Ajusta el ancho del bloque de texto para dividir el h1 en dos líneas */
+
+  }
+  
+  .text-block h1 {
+    font-size: 24px !important; /* Ajusta el tamaño del texto */
+    max-width: 400px; /* Ajusta este valor para controlar la división en dos líneas */
+    line-height: 1.2; /* Ajusta la altura de línea para mejorar la legibilidad */
+    margin-top: -150vw;
+  }
+
+  /*footer*/
+  .footer .circleHero {
+    width: 200px;
+    height: 200px;
+    margin-right: 0;
+    margin-bottom: 0px;
+  }
+  .footer .col-lg-8 {
+     order: 2;
+  }
+  .footer .col-lg-4,
+  .footer .col-lg-2 {
+    order: 1;
+    text-align: center;
+  }
+  .footer .col-lg-2 {
+    margin-top: 20px;
+  }
+  .footer .text-a-footer {
+    font-size: 14px;
+  }
+  .footer p {
+    font-size: 12px;
+    text-align: center;
+  }
+  .footer h5 {
+    text-align: center;
+  }
+  .footer .social-icons {
+    text-align: center;
+    margin: 0;
+  }
+  .footer .social-icon {
+    margin: 0 5px; /* Ajusta el margen entre íconos si es necesario */
+  }
+  .footer .list-unstyled{
+    text-align: center;
+  }
+ 
+}
+
+  @media (max-width: 576px) {
+    .circleHero {
+      width: 60vw;
+      height: 60vw;
+      margin-right: 5vw; 
+      margin-left: 3%;
+      margin-top: 30vw;
+    }
+
+    .slogan {
+      font-size: 2vw;
+    }
+
+    .vectors {
+      display: none;
+    }
+
+    .text-block {
+      display: flex;
+      justify-content: center; /* Centra el bloque horizontalmente */
+      text-align: center; /* Centra el texto dentro del bloque */
+     
+      margin: 0 auto; /* Centra el contenedor horizontalmente */
+      width: 80%; /* Ajusta el ancho del bloque de texto para dividir el h1 en dos líneas */
+  
+    }
+    
+    .text-block h1 {
+      font-size: 24px !important; /* Ajusta el tamaño del texto */
+      max-width: 400px; /* Ajusta este valor para controlar la división en dos líneas */
+      line-height: 1.2; /* Ajusta la altura de línea para mejorar la legibilidad */
+      margin-top: -180vw;
+    }
+     
+    .hero .button {
+      margin-top:10px;
+      right: 20vw; 
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
